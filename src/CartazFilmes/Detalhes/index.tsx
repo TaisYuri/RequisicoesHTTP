@@ -14,7 +14,7 @@ export function Detalhes({ data, onPress}: IDetalhes){
       <View style={styles.container}>
         <View style={styles.modalContainer}>
             <TouchableOpacity style={styles.btnVoltar} onPress={onPress}>
-                <Text style={{color: '#fff', fontSize: 16}}>Voltar</Text>
+                <Text style={{color: '#fff', fontSize: 20}}>Voltar</Text>
             </TouchableOpacity>
             <Text style={styles.titulo}>{data.nome}</Text>
             <Text style={styles.sinopse}>Sinopse: </Text>
@@ -34,7 +34,7 @@ export function Detalhes({ data, onPress}: IDetalhes){
     },
     modalContainer: {
         width: '90%',
-        height: '80%',
+        height: '50%',
         backgroundColor:'#1C1B19',
         borderTopRightRadius: 5,
         borderTopLeftRadius: 5,
@@ -44,6 +44,7 @@ export function Detalhes({ data, onPress}: IDetalhes){
         padding: 10,
         borderTopRightRadius: 5,
         borderTopLeftRadius: 5,
+        height: 50,
     },
     titulo:{
         textAlign: 'center',
